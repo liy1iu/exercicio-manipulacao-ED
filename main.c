@@ -243,25 +243,25 @@ void liberarPlaylist(NoMusica **head) {
 }
 
 void menuPrincipal() {
-    printf("\n========================================\n");
+    printf("\n--------------------------------------\n");
     printf("         MENU PRINCIPAL\n");
-    printf("========================================\n");
+    printf("--------------------------------------\n");
     printf("1. Testar Inserção em Posição\n");
     printf("2. Testar Busca por Valor\n");
     printf("3. Testar Inversão de Lista\n");
     printf("4. Testar Divisão de Lista\n");
     printf("5. Gerenciar Playlist de Músicas\n");
     printf("0. Sair\n");
-    printf("========================================\n");
+    printf("--------------------------------------\n");
     printf("Escolha: ");
 }
 
 void testarInsercao() {
     No *lista = NULL;
     
-    printf("\n========================================\n");
+    printf("\n--------------------------------------\n");
     printf("    TESTE: INSERÇÃO EM POSIÇÃO\n");
-    printf("========================================\n");
+    printf("--------------------------------------\n");
     
     inserirFim(&lista, 10);
     inserirFim(&lista, 20);
@@ -290,9 +290,9 @@ void testarInsercao() {
 void testarBusca() {
     No *lista = NULL;
     
-    printf("\n========================================\n");
+    printf("\n--------------------------------------\n");
     printf("       TESTE: BUSCA POR VALOR\n");
-    printf("========================================\n");
+    printf("--------------------------------------\n");
     
     inserirFim(&lista, 10);
     inserirFim(&lista, 20);
@@ -336,9 +336,9 @@ void testarBusca() {
 void testarInversao() {
     No *lista = NULL;
     
-    printf("\n========================================\n");
+    printf("\n--------------------------------------\n");
     printf("      TESTE: INVERSÃO DE LISTA\n");
-    printf("========================================\n");
+    printf("--------------------------------------\n");
     
     inserirFim(&lista, 10);
     inserirFim(&lista, 20);
@@ -363,9 +363,9 @@ void testarDivisao() {
     No *lista1 = NULL;
     No *lista2 = NULL;
     
-    printf("\n========================================\n");
+    printf("\n--------------------------------------\n");
     printf("      TESTE: DIVISÃO DE LISTA\n");
-    printf("========================================\n");
+    printf("--------------------------------------\n");
     
     inserirFim(&lista, 10);
     inserirFim(&lista, 20);
@@ -431,9 +431,9 @@ void gerenciarPlaylist() {
     char musica[100];
     
     do {
-        printf("\n========================================\n");
+        printf("\n--------------------------------------\n");
         printf("       PLAYLIST DE MÚSICAS\n");
-        printf("========================================\n");
+        printf("---------------------------------------\n");
         printf("1. Adicionar música\n");
         printf("2. Próxima música\n");
         printf("3. Música anterior\n");
@@ -441,7 +441,7 @@ void gerenciarPlaylist() {
         printf("5. Total de músicas\n");
         printf("6. Mostrar música atual\n");
         printf("0. Voltar ao menu principal\n");
-        printf("========================================\n");
+        printf("--------------------------------------\n");
         printf("Escolha: ");
         scanf("%d", &opcao);
         limparBuffer();
@@ -486,7 +486,7 @@ void gerenciarPlaylist() {
                 break;
                 
             case 5:
-                printf("\n📊 Total de músicas: %d\n", totalMusicas(playlist));
+                printf("\n Total de músicas: %d\n", totalMusicas(playlist));
                 pausar();
                 break;
                 
